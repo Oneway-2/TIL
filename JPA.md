@@ -1,3 +1,3 @@
 # JPA
 
-java
+java persistence
