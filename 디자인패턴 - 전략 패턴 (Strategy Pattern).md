@@ -159,6 +159,4 @@ public class Client {
 
 -   이로서, 원래 move() 메서드 코드를 건들이지 않고 행위가 수정되었음.
 
-####
-
 참고 출처: https://victorydntmd.tistory.com/292
