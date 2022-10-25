@@ -48,9 +48,8 @@
 -   예시
 
 ```
-ftp://ftp.is.co.za/rfc/rfc1808.txt
-http://www.ietf.org/rfc/rfc2396.txt
-telnet://192.0.2.16:80/
+urn:oasis:names:specification:docbook:dtd:xml:4.1.2
+tel:+1-816-123-1234
 ```
 
 <br>
