@@ -22,6 +22,7 @@
 -   EAGER(즉시로딩)을 사용하면 Over fetching 현상을 발생시킬 수 있음.
 -   또한 연관된 테이블의 갯수만큼 계속 select 요청을 보내는 n+1 문제를 야기시키기도 함.
 -   <span style="font-weight:bold">따라서 FetchType은 LAZY를 쓰는 것을 권장한다.</span>
+    -   (FetchType LAZY를 사용한다고 해서 반드시 n+1 문제가 해결되는 것은 아님)
 
 </br>
 
