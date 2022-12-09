@@ -43,9 +43,23 @@
     -   왜냐면 Fetch Join을 사용하면 호출 시점에 모든 연관 관계의 데이터를 바로 들고와버리기 때문.
     -   Lazy로 설정하나마나 소용이 없다는 뜻.
 
+</br>
+
 -   @EntityGraph 와 attributePaths 를 사용한 직접 쿼리 방법
     -   이 방법을 사용하면 필요한 연관관계를 EntityGraph를 이용해서 직접 설정할 수 있다.
     -   Fetch Join과는 다르게 join 문이 outer join으로 실행된다.
+    -   이 때, 카테시안 곱이 발생하지 않도록 예방할 필요가 있음.
+        -   예방법:
+        -   중복값을 허용하지 않는 Set 자료구조를 이용하기
+        -   JPQL에서 distinct를 사용하여 중복을 막기
+
+</br>
+
+-   QueryBuilder을 이용하기
+    -   JPA는 모든 문제를 자동으로 해결해주지 않음.
+    -   곳곳에 개발자가 로직을 직접 설정해줘야 하는 부분이 존재.
+    -   따라서 그러한 쿼리 작업을 도와주는 플로그인을 사용해보자.
+    -   예: Mybatis, QueryDSL, JOOQ, JDBC Template
 
 reference:
 
