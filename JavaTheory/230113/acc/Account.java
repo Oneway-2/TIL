@@ -5,7 +5,7 @@ package acc;
 public class Account {
 	int num;
 	String name;
-	int balance;
+	int balance;	
 	
 	public String info() {
 		return "번호: " + num + ", 이름: " + name + ", 잔액: " + balance;
@@ -18,6 +18,15 @@ public class Account {
 		}
 		else {
 			System.out.println("잔액이 모자랍니다.");
+		}
+	}
+	
+	public void deposit(int money) {
+		if(money > 0) {
+			balance += money;
+		}
+		else {
+			System.out.println("돈을 음수로 넣을 순 없잖아?");
 		}
 	}
 	
