@@ -21,5 +21,9 @@ public class ClassTest1 {
 		account2.withdraw(2222);
 		
 		System.out.println(account2.info());
+		
+		account2.deposit(10000);
+		
+		System.out.println(account2.info());
 	}
 }
