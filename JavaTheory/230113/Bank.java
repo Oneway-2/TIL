@@ -30,7 +30,7 @@ public class Bank {
 		for (int i = 0; i < index; i++) {
 			if (accs[i] instanceof SpecialAccount) {
 				SpecialAccount tmpSpecialAccount = (SpecialAccount)accs[i]; 
-				if (tmpSpecialAccount.getGrade().equals("VIP")) {
+				if (tmpSpecialAccount.getGrade().equals(grade)) {
 					System.out.println(tmpSpecialAccount.info());
 				}
 			}
